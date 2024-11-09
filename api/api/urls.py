@@ -22,7 +22,6 @@ from drf_spectacular.views import (
     SpectacularRedocView,
     SpectacularSwaggerView,
 )
-from post import urls as post_urls
 
 urls = [
     path(
@@ -44,11 +43,11 @@ urls = [
                     SpectacularRedocView.as_view(url_name="v1-schema"),
                     name="redoc",
                 ),
-                path(
-                    "post/",
-                    include((post_urls, "post")),
-                    name="post",
-                ),
+                # path(
+                #     "post/",
+                #     include((post_urls, "post")),
+                #     name="post",
+                # ),
             ]
         ),
     )

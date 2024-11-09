@@ -25,6 +25,11 @@ Sometimes you need to access the app container to run commands like `npm install
 docker exec -it scoped-app /bin/bash
 ```
 
+### API
+Sometimes you need to access the api container to run commands like `python manage.py migrate` or `python manage.py createsuperuser` or `python manage.py startapp <app_name>`.
+``` bash
+docker exec -it scoped-api /bin/bash
+```
 
 ## Docker hangs on npm install
 If you are having trouble with docker hanging on `npm install`, you can try the following:

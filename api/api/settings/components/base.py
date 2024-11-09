@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     "drf_spectacular",
     "health_check",
     "user",
+    "projects",
 ]
 
 MIDDLEWARE = [

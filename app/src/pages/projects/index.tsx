@@ -3,7 +3,11 @@ import { useEffect, useState } from "react";
 export default function Projects() {
 	const [projects, setProjects] = useState([]);
 	useEffect(() => {
-		fetch("http://localhost:8000/v1/projects/")
+		fetch("http://localhost:8000/v1/projects/projects/", {
+			headers: {
+				Authorization: `Bearer ${localStorage.getItem("access_token")}`,
+			},
+		})
 			.then((response) => response.json())
 			.then((data) => setProjects(data));
 	}, []);

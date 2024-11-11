@@ -16,3 +16,5 @@ if os.environ.get("ECS_CONTAINER_METADATA_URI_V4"):
         ALLOWED_HOSTS.append(container_metadata["Networks"][0]["IPv4Addresses"][0])
     except:
         pass
+
+DISABLE_AUTH = os.environ.get("DISABLE_AUTH", False)

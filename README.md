@@ -38,3 +38,13 @@ docker-compose build --no-cache
 docker-compose up
 ```
 
+
+
+
+
+# Development Notes
+
+- API and APP bootstrapped
+- Keycloak selected for authentication, handled separately in the `context-suite` repo. To expose it to multiple apps.
+- NEXT: work out how to integrate Django with Keycloak, so that we can use Keycloak's permissions to control access to the API endpoints.
+

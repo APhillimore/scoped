@@ -20,8 +20,8 @@ REST_FRAMEWORK = {
 }
 
 SPECTACULAR_SETTINGS = {
-    "TITLE": "Spheres API",
-    "DESCRIPTION": "API for Spheres",
+    "TITLE": "Scoped API",
+    "DESCRIPTION": "API for Scoped",
     "VERSION": "1.0.0",
     "SERVE_INCLUDE_SCHEMA": False,
     "SERVE_PERMISSIONS": ["rest_framework.permissions.IsAdminUser"],
@@ -36,7 +36,7 @@ AUTHENTICATION_BACKENDS = (
 
 AUTH_USER_MODEL = "user.User"
 
-SPHERES = {
+SCOPED = {
     "AWS": {
         "REGION": env("AWS_REGION"),
         "COGNITO": {

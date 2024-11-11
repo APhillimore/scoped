@@ -132,3 +132,5 @@ STORAGES = {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
 }
+
+DISABLE_AUTH = env("DISABLE_AUTH")

@@ -22,7 +22,7 @@ base_settings = [
     "components/base.py",
     "components/caches.py",
     "components/database.py",
-    "components/spheres.py",
+    "components/scoped.py",
     f"environments/{env('APP_MODE').lower()}.py",
     optional("environments/local.py"),
 ]
